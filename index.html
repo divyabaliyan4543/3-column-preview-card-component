@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | 3-column preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      body {
+        background-color: hsl(0, 0%, 95%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        width: 830px;
+        border-radius: 7px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        height: auto;
+      }
+      .card {
+        background-color: hsl(31, 77%, 52%);
+        padding: 38px;
+        position: relative;
+        flex: 1;
+      }
+      .card2 {
+        background-color: hsl(184, 100%, 22%);
+        padding: 38px;
+        position: relative;
+        flex: 1;
+      }
+      .card3 {
+        background-color: hsl(179, 100%, 13%);
+        padding: 38px;
+        position: relative;
+        flex: 1;
+      }
+      button {
+        border-radius: 20px;
+        padding: 10px 30px;
+        border: none;
+        background-color: hsl(0, 0%, 95%);
+        margin-bottom: 40px;
+        position: absolute;
+        bottom: 0;
+      }
+      p {
+        color: hsla(0, 0%, 100%, 0.75);
+        text-align: left;
+        line-height: 1.7;
+        margin-bottom: 100px;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+      }
+      h3 {
+        color: hsl(0, 0%, 95%);
+        text-align: left;
+        font-family: "Big Shoulders", sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      .btn1 {
+        color: hsl(31, 77%, 52%);
+      }
+      .btn2 {
+        color: hsl(184, 100%, 22%);
+      }
+      .btn3 {
+        color: hsl(179, 100%, 13%);
+      }
+
+      @media (max-width: 400px) {
+        .container {
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+        }
+        body {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./images/icon-sedans.svg" />
+        <h3>SEDANS</h3>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="btn1">Learn More</button>
+      </div>
+      <div class="card2">
+        <img src="./images/icon-suvs.svg" />
+        <h3>SUVS</h3>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button class="btn2">Learn More</button>
+      </div>
+      <div class="card3">
+        <img src="./images/icon-luxury.svg" />
+        <h3>LUXURY</h3>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+
+        <button class="btn3">Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
